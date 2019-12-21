@@ -28,6 +28,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
+
         @Override
         public void onMapReady(GoogleMap googleMap) {
             map =googleMap;
