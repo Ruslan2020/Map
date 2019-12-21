@@ -31,10 +31,13 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         @Override
         public void onMapReady(GoogleMap googleMap) {
             map =googleMap;
-            LatLng Maharashtra = new LatLng( 19.169257, 73.341601);
-            map.addMarker(new MarkerOptions() .position(Maharashtra).title("Maharashtra"));
-            map.moveCamera(CameraUpdateFactory.newLatLng(Maharashtra));
+            LatLng SurguShip = new LatLng( 61.239918, 73.410864);
+            map.addMarker(new MarkerOptions() .position(SurguShip).title("Surgu"));
+            map.moveCamera(CameraUpdateFactory.newLatLng(SurguShip));
+            map.setMinZoomPreference(15);
+            map.setMaxZoomPreference(30);
         }
+
 
 }
 
